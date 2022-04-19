@@ -33,10 +33,6 @@ app.use('/api/encuestas/users', userRouter);
 app.use('/api/encuestas/adminUsers', adminUserRouter);
 app.use('/api/encuestas/surveys', surveyRouter);
 app.use('/api/encuestas/category', categoryRouter);
-<<<<<<< HEAD
-/*
-app.listen(4500,()=>console.log('Servidor funcionando en 4000'));*/
-=======
 app.use('/api/encuestas/question', questionRouter);
 
 /*
@@ -52,4 +48,3 @@ app.use('/api/encuestas/question', questionRouter);
     "answers": ["Dinamarca", "Senegal", "Canadá", "Gales"]
 }
 */
->>>>>>> 8aee795fc7340bf615dd1221352fc24801936c69
