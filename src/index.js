@@ -32,3 +32,5 @@ app.use('/api/encuestas/users', userRouter);
 app.use('/api/encuestas/adminUsers', adminUserRouter);
 app.use('/api/encuestas/surveys', surveyRouter);
 app.use('/api/encuestas/category', categoryRouter);
+/*
+app.listen(4500,()=>console.log('Servidor funcionando en 4000'));*/
