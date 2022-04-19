@@ -3,7 +3,7 @@
 const {model, Schema} = require('mongoose');
 
 const SurveySchema = new Schema({
-  surveyName: {
+  name: {
     type: String,
     required: true,
     trim: true,
@@ -17,13 +17,9 @@ const SurveySchema = new Schema({
     default: false
   },
   questions: {
-    type: Array,
-    required: true,
-  },
-  answers: {
-    type: Array,
-    required: true,
-    default: []
+    type: [Schema.Types.ObjectId],
+    ref: 'Question',
+    required: true
   },
   category: {
     type: String,
